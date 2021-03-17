@@ -1,13 +1,16 @@
 """Convert text to snake case"""
-import fileinput
 import re
+import sys
 
 
 def main() -> None:
     """Snekify CLI interface"""
-    snekified_lines: list[str] = []
-    for line in fileinput.input():
-        snekified_lines.append(snekify(line))
+    if len(sys.argv) > 1:
+        text = ' '.join(sys.argv[1:])
+    else:
+        text = sys.stdin.read()
+
+    snekified_lines = [snekify(line) for line in text.splitlines()]
     print('\n'.join(snekified_lines))
 
 
