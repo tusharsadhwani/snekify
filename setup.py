@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="snekify",
-    version="1.0.0",
+    version="2.0.0",
     author="Tushar Sadhwani",
     author_email="tushar.sadhwani000@gmail.com",
     description="Convert text to snake case",
