@@ -1,8 +1,8 @@
 # snekify
 
-Convert text to snake case
+Convert text to snake case.
 
-"Some TEXT-here" -> "some_text_here"
+`"Some TEXT-here"` 🡲 `"some_text_here"`
 
 ## Usage
 
